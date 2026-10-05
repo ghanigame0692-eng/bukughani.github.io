@@ -3,7 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Buku Catatan Keuangan Ghani</title>
+<title>Catatan Keuangan Ghani</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <style>
 :root{--bg:#eef1f8;--card:#fff;--soft:#f4f6fc;--ink:#141b34;--mut:#7380a0;--line:#e3e8f3;--in:#12a27a;--out:#ef5b5b;--acc:#4f46e5;--acct:#fff;--sh:0 8px 24px rgba(40,50,110,.08);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c1022;--card:#151b36;--soft:#1b2242;--ink:#eaeefc;--mut:#8d99bd;--line:#252d52;--in:#35d6a4;--out:#ff7b7b;--acc:#7c74ff;--sh:0 8px 24px rgba(0,0,0,.35)}}
@@ -57,13 +59,13 @@ button:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
 </style>
 </head>
 <body class="locked">
-<div id="login"><div class="lg"><div class="av">G</div><h1>Buku Catatan Keuangan Ghani</h1><div class="s">Masuk untuk membuka catatan keuanganmu</div>
+<div id="login"><div class="lg"><div class="av">G</div><h1>Catatan Keuangan Ghani</h1><div class="s">Masuk untuk membuka catatan keuanganmu</div>
 <div class="f"><label for="lu">Username</label><input id="lu" autocomplete="username" autocapitalize="none" placeholder="Username"></div>
 <div class="f"><label for="lp">Password</label><input id="lp" type="password" autocomplete="current-password" placeholder="Password"></div>
 <label class="ck"><input type="checkbox" id="rem" checked>Tetap masuk di perangkat ini</label>
 <button class="btn" id="lgo">Masuk</button><div class="err" id="lerr" role="alert"></div></div></div>
 <div class="wrap">
-<header><div class="av">G</div><div class="t"><h1>Buku Catatan Keuangan Ghani</h1><div class="s">Halo, Ghani</div></div><button class="ghost" onclick="logout()">Keluar</button></header>
+<header><div class="av">G</div><div class="t"><h1>Catatan Keuangan Ghani</h1><div class="s">Halo, Ghani</div></div><button class="ghost" onclick="logout()">Keluar</button></header>
 <div class="tabs" id="tabs"></div>
 <main id="v"></main>
 </div>
